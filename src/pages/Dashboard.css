@@ -1,0 +1,132 @@
+.dashboard-page {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+.range-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.range-inputs input {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.results-info {
+    margin-bottom: 25px;
+}
+
+.results-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.results-info p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.profile-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.profile-card .profile-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tag {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-sm {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex: 1;
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .dashboard-page {
+        grid-template-columns: 1fr;
+    }
+}

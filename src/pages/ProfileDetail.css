@@ -1,0 +1,152 @@
+.profile-detail-page {
+    padding: 40px 20px;
+}
+
+.detail-header {
+    margin-bottom: 20px;
+}
+
+.back-link,
+.back-link-btn {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.back-link:hover,
+.back-link-btn:hover {
+    color: var(--primary-color);
+}
+
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+}
+
+.profile-hero {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.hero-img img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-status {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.verified-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.quick-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.detail-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.grid-item span {
+    font-weight: 500;
+}
+
+.hobby-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.safety-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.safety-card ul {
+    padding-left: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.safety-card li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .name-status {
+        justify-content: center;
+    }
+}
